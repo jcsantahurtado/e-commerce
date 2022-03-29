@@ -1,0 +1,5 @@
+.banner {
+    background: url(../../img/banner.png) no-repeat center / cover;
+    padding: 5rem .5rem 2rem .5rem;
+    width: 100%;
+}

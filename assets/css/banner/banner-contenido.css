@@ -1,0 +1,27 @@
+.banner__titulo {
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.banner__descripcion {
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 1.75rem;
+}
+
+.banner__boton {
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    width: 118px;
+    height: 40px;
+}
