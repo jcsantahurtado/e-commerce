@@ -1,3 +1,7 @@
+.productos {
+    padding: 2rem .75rem;
+}
+
 .productos__header {
     align-items: center;
     display: flex;
@@ -23,6 +27,10 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
+}
+
+.productos__boton:hover {
+    cursor: pointer;
 }
 
 .productos__contenido {

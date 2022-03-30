@@ -1,5 +1,14 @@
+.contacto {
+    padding: 1rem 2rem;
+    background: #EAF2FD;
+}
+
 .listaNavegacion {
     text-align: center;
+}
+
+.listaNavegacion__enlace{
+    padding: .5rem 0;
 }
 
 .listaNavegacion__enlace a {
@@ -10,6 +19,10 @@
     font-size: 16px;
     line-height: 19px;
     text-decoration: none;
+}
+
+.formulario {
+    padding-top: 1.5rem;
 }
 
 .form__label {

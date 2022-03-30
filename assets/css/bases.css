@@ -1,4 +1,28 @@
-body {
+.app {
     background-color: #F5F5F5;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "contenido"
+    "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
     font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    grid-area: header;
+    padding: 1rem 0;
+}
+
+.contenido {
+    grid-area: contenido;
+}
+
+.oculto {
+    display: none;
+}
+
+.footer {
+    grid-area: footer;
 }
