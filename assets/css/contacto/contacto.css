@@ -41,7 +41,6 @@
 }
 
 .formulario {
-    width: 88%;
     margin: 0 auto;
 }
 
@@ -55,6 +54,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+    margin: .5rem 0;
     padding: 1.5rem 0.5rem 0.75rem;
 }
 
@@ -68,20 +68,15 @@
 }
 
 .input-label {
-
+    color: #A2A2A2;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-  
-    /* Preto/50% */
-    color: #A2A2A2;
-  
-    pointer-events: none;
-    *opacity: 0.5;
-    position: absolute;
     padding-left: .5rem;
+    pointer-events: none;
+    position: absolute;
     left: 0;
     top: 60%;
     -webkit-transform: translateY(-50%);
@@ -91,7 +86,7 @@
 
 .input-label--message {
     top: 2rem;
-  }
+}
 
 
 .input:focus+.input-label,
@@ -112,8 +107,6 @@
   -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
-
-
 
 .input-message-error {
     display: none;

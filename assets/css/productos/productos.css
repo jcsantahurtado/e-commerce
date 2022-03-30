@@ -1,12 +1,15 @@
 .productos {
-    padding: 2rem .75rem;
+    padding: 1rem 1rem;
+}
+.productos__items {
+    padding: 1rem 0;
 }
 
 .productos__header {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: .2rem 1.5rem;
+    padding-bottom: .5rem;
 }
 
 .productos__titulo {
@@ -39,12 +42,20 @@
 }
 
 .productos__card {
-    padding: 1rem 1rem;
-    width: calc(50% - 2rem);
+    margin-right: 1rem;
+    width: calc(50% - .5rem);
+}
+
+.productos__card:nth-last-child(odd){
+    margin-right: 0;
 }
 
 .productos__card___imagen {
     width: 100%;
+}
+
+.productos__card___base {
+    padding: .25rem 0 .75rem .1rem;
 }
 
 .productos__card___titulo {

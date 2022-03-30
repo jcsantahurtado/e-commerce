@@ -20,8 +20,10 @@
 .banner__boton {
     background-color: #2A7AE4;
     color: #FFFFFF;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
     padding: 12px 16px;
-    text-decoration: none;
-    width: 118px;
-    height: 40px;
+    text-decoration: none;    
 }

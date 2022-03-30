@@ -17,7 +17,6 @@
     .header__nav__wrapper {
         order: 3;
         justify-content: end;
-        *width: 40%;
     }
 
     .header__nav__link {
@@ -37,13 +36,34 @@
     .header-barraBusca__wrapper {
         order: 2;
     }
+
+    .banner {
+        padding-left: 1rem;
+    }
+
+    .banner__titulo {
+        font-size: 52px;
+        line-height: 61px;
+    }
+
+    .banner__descripcion {
+        font-size: 22px;
+        line-height: 26px;
+    }
     
     .productos__card {
-        width: calc(25% - 2rem);
+        width: calc(25% - .75rem);
+    }
+
+    .productos__card:nth-last-child(2n+1) {
+        margin-right: 1rem;
+    }
+
+    .productos__card:nth-child(4) {
+        margin-right: 0;
     }
 
     .contacto {
-        *align-items: center;
         display: grid;
         grid-template-areas: 
         "card-listaNavegacion"
@@ -61,15 +81,19 @@
         width: 35%;
     }
 
+    .banner {
+        padding-left: 6%;
+    }
+
     .productos__items {
         margin: 0 auto;
         width: 88%;
     }
-    
 
     .contacto {
         grid-template-columns: 50% 50%;
-        margin: 0 auto;
+        padding-left: 6%;
+        padding-right: 6%;
         width: 88%;
     }
 }
@@ -82,7 +106,15 @@
     }
 
     .productos__card {
-        width: calc((100% / 6) - 2rem);
+        width: calc((100% / 6) - .84rem);
+    }
+
+    .productos__card:nth-child(4) {
+        margin-right: 1rem;
+    }
+
+    .productos__card:last-child {
+        margin-right: 0;
     }
 
     .oculto {
