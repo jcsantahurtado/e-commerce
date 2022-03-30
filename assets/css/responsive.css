@@ -1,0 +1,106 @@
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .header-utilitario-busca {
+        display: none;
+    }
+
+    .header__nav__link {
+        order: 1;
+    }
+
+    .header__nav__wrapper {
+        order: 3;
+        justify-content: end;
+        *width: 40%;
+    }
+
+    .header__nav__link {
+        width: initial;
+    }
+
+    .header__nav__link,
+    .header__nav__wrapper {
+        width: initial;
+    }
+
+    .header-barraBusca__wrapper {
+        display: block;
+        order: 2;
+    }
+
+    .header-barraBusca__wrapper {
+        order: 2;
+    }
+    
+    .productos__card {
+        width: calc(25% - 2rem);
+    }
+
+    .contacto {
+        *align-items: center;
+        display: grid;
+        grid-template-areas: 
+        "card-listaNavegacion"
+        "card-form"
+        ;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    .header__nav__wrapper {
+        width: 35%;
+    }
+
+    .productos__items {
+        margin: 0 auto;
+        width: 88%;
+    }
+    
+
+    .contacto {
+        grid-template-columns: 50% 50%;
+        margin: 0 auto;
+        width: 88%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .banner {
+        padding-left: 5rem;
+    }
+
+    .productos__card {
+        width: calc((100% / 6) - 2rem);
+    }
+
+    .oculto {
+        display: block;
+    }
+
+    .listaNavegacion {
+        display: grid;
+        grid-template-areas: 
+        "card-lista-imagen"
+        "card-lista-lista"
+        ;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
