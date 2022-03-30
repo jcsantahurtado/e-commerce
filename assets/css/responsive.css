@@ -19,10 +19,6 @@
         justify-content: end;
     }
 
-    .header__nav__link {
-        width: initial;
-    }
-
     .header__nav__link,
     .header__nav__wrapper {
         width: initial;
@@ -81,6 +77,10 @@
         width: 35%;
     }
 
+    .header__nav__link {
+        width: 182px;;
+    }
+
     .banner {
         padding-left: 6%;
     }
@@ -103,6 +103,10 @@
 
     .banner {
         padding-left: 5rem;
+    }
+
+    .header__nav__link--login {
+        width: 182px;
     }
 
     .productos__card {
