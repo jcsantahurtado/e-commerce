@@ -69,7 +69,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    padding: 1rem 1rem;
+    padding: .5rem 1rem;
 }
 
 .header-barraBusca__wrapper__form input:focus {

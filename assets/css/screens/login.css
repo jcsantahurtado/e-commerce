@@ -1,0 +1,14 @@
+.login {
+    padding: 0 1rem;
+}
+
+.login__formulario {
+    max-width: 412px;
+    margin: 5rem auto;
+}
+
+.button-entrar {
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    width: 100%;
+}
