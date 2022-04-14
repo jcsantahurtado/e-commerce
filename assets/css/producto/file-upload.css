@@ -1,0 +1,152 @@
+.drag-area {
+    background: #fff;
+    border: 2px dashed #C8C8C8;
+    height: 134px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.drag-area.active {
+    border: none;
+}
+
+.drag-area .icon {
+    color: #6B6B6B;
+    font-size: 18.7px;
+    padding-bottom: 1rem;
+}
+
+.drag-area header {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.drag-area header {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    align-items: center;
+    text-align: center;
+
+    color: #6B6B6B;
+}
+
+.drag-area span {
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px 0 15px 0;
+}
+
+.input-container span {
+    display: none;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* identical to box height, or 125% */
+    align-items: center;
+    text-align: center;
+
+    /* Preto/100% */
+    color: #464646;
+}
+
+.drag-area button {
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: none;
+    color: #6B6B6B;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.drag-area img {
+    background-color: #F5F5F5;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.drag-area header {
+    display: none;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   .drag-area {
+       width: 50%;
+   }
+
+   .drag-area .icon {
+       font-size: 32px;
+   }
+
+   .drag-area header {
+       display: initial;
+   }
+
+   .input-container-drag {
+       align-items: center;
+       flex-direction: row; 
+       justify-content: space-between;
+   }
+
+   .input-container .or {
+       display: initial;
+   }
+
+   .input-container > button {
+       padding-top: initial;
+       position: initial;
+       width: 40%;
+
+       /* Azul/100% */
+       border: 1px solid #2A7AE4;
+       box-sizing: border-box;
+
+       font-family: 'Raleway';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 19px;
+
+       color: #2A7AE4;
+
+       padding: 1rem;
+   }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+} 

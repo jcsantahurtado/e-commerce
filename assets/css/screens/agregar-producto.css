@@ -1,0 +1,26 @@
+.agregarProducto {
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+.input-container > button {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    padding-top: 12.5%;
+    color: #A2A2A2;
+}
+
+.drag-area {
+    width: 100%;
+}
+
+.resgistro__formulario {
+    margin: 0 auto;
+    max-width: 704px;
+}
+
+.form__label {
+    padding-bottom: .5rem;
+}
