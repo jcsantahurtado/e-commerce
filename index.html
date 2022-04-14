@@ -326,20 +326,20 @@
                     </ul>
                 </nav>
             </div>
-            <form action="./registro_concluido.html" class="formulario flex flex--column">
+            <form action="" class="formulario flex flex--column">
                 <fieldset>
                     <legend class="form__label">Hable con nosotros</legend>
                     <div class="input-container">
-                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required=""
+                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required maxlength="40"
                             data-tipo="nombre">
                         <label class="input-label" for="name">Nombre</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <textarea name="mensaje" id="mensaje" class="input" placeholder="Escribe tu mensaje" required
+                        <textarea name="mensaje" id="mensaje" class="input" placeholder="Escribe tu mensaje" required minlength="10" maxlength="120"
                             data-tipo="mensaje" cols="30" rows="3"></textarea>
                         <label class="input-label input-label--message" for="mensaje">Mensaje</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error input-message-error--mensaje">Este campo no es valido</span>
                     </div>
                 </fieldset>
                 <button class="button">Enviar mensaje</button>
@@ -352,6 +352,8 @@
         Desarrollado por Juan Carlos - 2022
     </footer>
 
+    <script src="./assets/js/app.js" type="module"></script>
+    
 </body>
 
 </html>
