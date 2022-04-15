@@ -65,28 +65,28 @@
                         <div class="drag-area">
                             <div class="icon"><i class="fa-solid fa-image"></i></div>
                             <header>Arrastre para agregar una imagen para el producto</header>
-                            <input type="file" required hidden>
+                            <input type="file" required data-tipo="imagen" hidden>
                         </div>
+                        <span class="input-message-error">Este campo no es valido</span>
                         <span class="or">O</span>
                         <button>Busque en su dispositivo</button>
                     </div>
 
                     <div class="input-container">
                         <input type="text" name="nombre" id="nombre" class="input" placeholder="Nombre del producto"
-                            required data-tipo="nombre">
-                        <label class="input-label input-label--message" for="nombre">Nombre del producto</label>
+                            required data-tipo="nombreProducto">
+                        <label class="input-label" for="nombre">Nombre del producto</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input type="text" name="precio" id="precio" class="input" placeholder="Precio del produtco"
-                            required data-tipo="precio" pattern="^[0-9]">
-                        <label class="input-label input-label--message" for="precio">Precio del produtco</label>
+                        <input type="text" name="precio" id="precio" class="input" placeholder="Precio del producto"
+                            required data-tipo="precio" pattern="\d{3,10}">
+                        <label class="input-label" for="precio">Precio del producto</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <textarea name="descripción" id="descripción" class="input"
-                            placeholder="Descripción del producto" required data-tipo="descripción" cols="30"
-                            rows="3"></textarea>
+                        <textarea name="descripción" id="descripción" class="input" placeholder="Descripción del producto" 
+                            required data-tipo="descripcion" pattern="[\s\S]{6,30}" cols="30" rows="3"></textarea>
                         <label class="input-label input-label--descripción" for="descripción">Descripción del
                             producto</label>
                         <span class="input-message-error">Este campo no es valido</span>
@@ -136,6 +136,7 @@
         Desarrollado por Juan Carlos - 2022
     </footer>
 
+    <script src="../js/app.js" type="module"></script>
     <script src="../../assets/components/file-upload.js"></script>
 </body>
 

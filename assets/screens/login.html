@@ -45,26 +45,25 @@
 
     <main class="contenido">
         <section class="login">
-            <form action="" class="login__formulario flex flex--column">
+            <form action="./agregar-producto.html" class="login__formulario flex flex--column">
                 <fieldset>
                     <legend class="form__label">Iniciar Sesión</legend>
                     <div class="input-container">
-                        <input name="email" id="email" class="input" type="email" placeholder="Escriba su correo electrónico" required=""
+                        <input name="email" id="email" class="input" type="email" placeholder="Escriba su correo electrónico" required
                             data-tipo="email">
                         <label class="input-label" for="email">Escriba su correo electrónico</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input type="password" name="password" id="password" class="input" placeholder="Escriba su contraseña" required 
-                        data-tipo="password">
+                        <input type="password" name="password" id="password" class="input" placeholder="Escriba su contraseña" required  
+                        data-tipo="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$">
                         <label class="input-label" for="password">Escriba su contraseña</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                 </fieldset>
-                <!-- <a href="./agregar-producto.html">
-                    <button class="button button-entrar">Entrar</button>
-                </a> -->
-                <a href="./agregar-producto.html" class="button button-entrar">Entrar</a>
+
+                <button class="button button-entrar">Entrar</button>
+
             </form>
         </section>
         
@@ -107,6 +106,8 @@
     <footer class="footer">
         Desarrollado por Juan Carlos - 2022
     </footer>
+
+    <script src="../js/app.js" type="module"></script>
 
 </body>
 
