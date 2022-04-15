@@ -5,6 +5,7 @@
 
 .listaNavegacion {
     text-align: center;
+    padding-bottom: 1.5rem;
 }
 
 .listaNavegacion__enlace{
@@ -21,10 +22,6 @@
     text-decoration: none;
 }
 
-.formulario {
-    padding-top: 1.5rem;
-}
-
 .form__label {
     color: #464646;
     font-family: 'Raleway';
@@ -38,17 +35,4 @@
     display: flex;
     flex-direction: column;
     position: relative;
-}
-
-.formulario {
-    *margin: 0 auto;
-}
-
-.button {
-    background-color: #2A7AE4;
-    border: none;
-    color: #FFFFFF;
-    margin-top: 1rem;
-    padding: 12px 16px;
-    text-decoration: none;
 }

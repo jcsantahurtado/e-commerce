@@ -11,4 +11,5 @@
     display: block;
     margin-top: 1rem;
     padding: 1rem 1rem;
+    width: -moz-available;
 }
