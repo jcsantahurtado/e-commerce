@@ -1,15 +1,14 @@
 .login {
-    padding: 0 1rem;
+    padding: 2.5rem 0;
+    text-align: -moz-center;
 }
 
 .login__formulario {
     max-width: 412px;
-    margin: 5rem auto;
 }
 
 .button-entrar {
     display: block;
     margin-top: 1rem;
     padding: 1rem 1rem;
-    *width: 100%;
 }

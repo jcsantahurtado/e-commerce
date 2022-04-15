@@ -23,54 +23,37 @@
 
 .input-label {
     color: #A2A2A2;
+    cursor: text;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
+    position: absolute;
+    top: 2rem;
+    left: 0.5rem;
     font-size: 16px;
     line-height: 20px;
-    padding-left: .5rem;
-    pointer-events: none;
-    position: absolute;
-    left: 0;
-    top: 60%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    cursor: text;
+    transition: all 0.25s;
 }
 
 .input-label--message {
     top: 2rem;
 }
 
-.input:focus+.input-label,
-.input:not(:placeholder-shown)+.input-label {
-    top: 12px;
-    -webkit-transform: scale(0.7) translateY(-10%) translateX(-8.5px);
-    transform: scale(0.7) translateY(-10%) translateX(-8.5px);
-}
-
-.input,
-.input-label {
-    *-webkit-user-select: none;
-    *-moz-user-select: none;
-    *-ms-user-select: none;
-    *user-select: none;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-    -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+.input:not(:placeholder-shown) + .input-label, 
+.input:focus + .input-label {
+    font-size: 0.875rem;
+    top: 0.75rem;
+    transition: all 0.25s;
 }
 
 .input-message-error {
     display: none;
 }
 
-
 .input-container--invalid .input-message-error {
     color: #df2525;
     display: block;
     font-size: 14px;
-    *margin-top: 0.5rem;
     padding-left: 0.5rem;
     position: absolute;
     top: 87.5%;
