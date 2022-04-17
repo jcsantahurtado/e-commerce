@@ -91,14 +91,14 @@ headerTemplate.innerHTML = `
 
     <header class="header">
         <nav class="header__nav--home">
-            <a href="/index.html" class="header__nav__link">
+            <a href="../../index.html" class="header__nav__link">
                 <img class="header__nav__link__logo" alt="Logo de AluraGeek">
             </a>
             <div class="header__nav__wrapper">
                 <div class="header-utilitario-busca header-utilitario-busca--home">
                     <i class="fa fa-search"></i>
                 </div>
-                <a href="/assets/screens/login.html" class="header__nav__link header__nav__link--login">Login</a>
+                <a href="../../assets/screens/login.html" class="header__nav__link header__nav__link--login">Login</a>
             </div>
             <div class="header-barraBusca__wrapper">
                 <form action="" class="header-barraBusca__wrapper__form">
