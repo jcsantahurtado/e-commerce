@@ -1,6 +1,8 @@
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    
+    .header-barraBusca__wrapper {
+        display: none;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -92,9 +94,6 @@
 
     .contacto {
         grid-template-columns: 50% 50%;
-        padding-left: 6%;
-        padding-right: 6%;
-        width: 88%;
     }
 }
 
