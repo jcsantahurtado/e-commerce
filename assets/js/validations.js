@@ -50,16 +50,16 @@ const mensajesDeError = {
 
 
 function mostrarMensajeDeError(tipoDeInput, input) {
-    let mensaje = "";
+    let mensajeDeError = "";
     tipoDeErrores.forEach(error => {
 
         if (input.validity[error]) {
-            mensaje = mensajesDeError[tipoDeInput][error];
+            mensajeDeError = mensajesDeError[tipoDeInput][error];
         }
 
         else if (!input.checkValidity() && input.type == "textarea" && input.value != "") {
-            mensaje = "El mensaje debe contener entre 10 a 120 caracteres";
+            mensajeDeError = `El mensaje debe contener entre ${input.minLength} a 120 caracteres`;
         }
     });
-    return mensaje;
+    return mensajeDeError;
 }
