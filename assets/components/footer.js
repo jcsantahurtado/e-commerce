@@ -104,9 +104,9 @@ footerTemplate.innerHTML = `
     <footer class="footer">
             <a class="footer__link" href="#">Desarrollado por Juan Carlos</a>
             <ul class="footer__social-row">
-                <li><a class="footer__link" href="https://github.com/jcsantahurtado"><i class="fab fa-github"></i></a></li>
-                <li><a class="footer__link" href="https://twitter.com/jcsantahurtado"><i class="fab fa-twitter"></i></a></li>
-                <li><a class="footer__link" href="https://www.linkedin.com/in/jcsantahurtado"><i class="fab fa-linkedin"></i></a></li>
+                <li><a class="footer__link" href="https://github.com/jcsantahurtado" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a class="footer__link" href="https://twitter.com/jcsantahurtado" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="footer__link" href="https://www.linkedin.com/in/jcsantahurtado" target="_blank"><i class="fab fa-linkedin"></i></a></li>
             </ul>
     </footer>
 `;
