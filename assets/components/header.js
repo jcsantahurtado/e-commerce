@@ -59,7 +59,7 @@ headerTemplate.innerHTML = `
         }
 
         .header-barraBusca__wrapper__form {
-            background-color: #FFFFFF;
+            background-color: #F5F5F5;
             border-radius: 20px;
             display: flex;
         }
@@ -85,9 +85,10 @@ headerTemplate.innerHTML = `
         }
 
         .header-barraBusca__wrapper__form button {
-            font-size: 24px;
             color: #A2A2A2;
-            padding: .5rem 1rem .5rem 0;
+            font-size: 24px;
+            max-height: 40px;
+            padding: .4rem 1rem .6rem 0;
         }
     </style>
 
@@ -121,6 +122,7 @@ class Header extends HTMLElement {
 
     connectedCallback() {
         const fontAwesome = document.querySelector('link[href*="font-awesome"]');
+        const bases = document.querySelector('link[href*="bases"]');
         const logo = document.querySelector('link[href*="logo"]');
 
         const responsive = document.querySelector('link[href*="responsive"]');
@@ -129,6 +131,10 @@ class Header extends HTMLElement {
 
         if (fontAwesome) {
             shadowRoot.appendChild(fontAwesome.cloneNode());
+        }
+
+        if (bases) {
+            shadowRoot.appendChild(bases.cloneNode());
         }
 
         if (logo) {

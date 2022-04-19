@@ -121,6 +121,7 @@ class Footer extends HTMLElement {
 
         const fontAwesome = document.querySelector('link[href*="font-awesome"]');
         const reset = document.querySelector('link[href*="reset"]');
+        const bases = document.querySelector('link[href*="bases"]');
         const logo = document.querySelector('link[href*="logo"]');
         const inputs = document.querySelector('link[href*="inputs"]');
         const buttons = document.querySelector('link[href*="buttons"]');
@@ -135,6 +136,10 @@ class Footer extends HTMLElement {
 
         if (reset) {
             shadowRoot.appendChild(reset.cloneNode());
+        }
+
+        if (bases) {
+            shadowRoot.appendChild(bases.cloneNode());
         }
 
         if (logo) {
