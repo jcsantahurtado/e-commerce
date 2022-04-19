@@ -1,7 +1,17 @@
- /* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .header-barraBusca__wrapper {
         display: none;
+    }
+
+    .header__nav__wrapper {
+        width: 61.09%;
+    }
+
+    .header-utilitario-busca {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -14,11 +24,13 @@
 
     .header__nav__link {
         order: 1;
+        margin-right: 1rem;
     }
 
     .header__nav__wrapper {
         order: 3;
         justify-content: end;
+        margin-left: 1rem;
     }
 
     .header__nav__link,
@@ -29,6 +41,12 @@
     .header-barraBusca__wrapper {
         display: block;
         order: 2;
+        width: -moz-available;
+        max-width: 390px;
+    }
+
+    .header-barraBusca__wrapper__form input {
+        width: -moz-available;
     }
 
     .header-barraBusca__wrapper {
@@ -76,6 +94,7 @@
 @media only screen and (min-width: 768px) {
     
     .header__nav__wrapper {
+        justify-content: initial;
         width: 35%;
     }
 
@@ -99,6 +118,11 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+    .header__nav__wrapper {
+        margin-left: initial;
+        width: 50%;
+    }
 
     .banner {
         padding-left: 5rem;

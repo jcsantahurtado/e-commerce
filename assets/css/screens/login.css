@@ -1,5 +1,5 @@
 .login {
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 2rem;
     text-align: -moz-center;
 }
 
@@ -7,9 +7,22 @@
     max-width: 412px;
 }
 
+.form__label {
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
 .button-entrar {
     display: block;
     margin-top: 1rem;
     padding: 1rem 1rem;
-    width: -moz-available;
+    min-width: 109px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    .button-entrar  {
+        width: -moz-available;
+    }
 }

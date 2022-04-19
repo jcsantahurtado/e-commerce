@@ -22,32 +22,27 @@ headerTemplate.innerHTML = `
             width: 88%;
         }
 
-        .header__nav__link,
-        .header__nav__wrapper {
-            width: 50%;
-        }
-
         .header__nav__link {
             display: flex;
-            justify-content: space-evenly;
         }
 
         .header__nav__link__logo {
-            width: -moz-available;
             max-width: 176px;
         }
 
         .header__nav__wrapper {
             display: flex;
-            justify-content: space-evenly;
             flex-direction: row-reverse;
             align-items: center;
         }
 
         .header-utilitario-busca {
-            font-size: 17.5px;
             color: #464646;
-        }
+            font-size: 17.5px;
+            padding-left: 1rem;
+            height: 24px;
+            width: 24px;
+        }  
 
         .header-utilitario-busca:hover {
             cursor: pointer;
@@ -60,10 +55,7 @@ headerTemplate.innerHTML = `
             padding: .75rem 1rem;
             text-align: center;
             text-decoration: none;
-        }
-
-        .header-barraBusca__wrapper {
-            *display: none;
+            width: 8.3125rem;
         }
 
         .header-barraBusca__wrapper__form {
@@ -103,13 +95,13 @@ headerTemplate.innerHTML = `
     <header class="header">
         <nav class="header__nav--home">
             <a href=${urlIndexHtml} class="header__nav__link">
-                <img class="header__nav__link__logo" alt="Logo de AluraGeek">
+                <img class="header__nav__link__logo logo" alt="Logo de AluraGeek">
             </a>
             <div class="header__nav__wrapper">
                 <div class="header-utilitario-busca header-utilitario-busca--home">
                     <i class="fa fa-search"></i>
                 </div>
-                <a href=${urlLoginHtml} class="header__nav__link header__nav__link--login">Login</a>
+                <a href=${urlLoginHtml} class="header__nav__link--login">Login</a>
             </div>
             <div class="header-barraBusca__wrapper">
                 <form action="" class="header-barraBusca__wrapper__form">
@@ -152,4 +144,3 @@ class Header extends HTMLElement {
 }
 
 customElements.define('header-component', Header);
-

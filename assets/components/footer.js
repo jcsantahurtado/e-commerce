@@ -69,7 +69,7 @@ footerTemplate.innerHTML = `
     </style>
     <section class="contacto">
         <div class="listaNavegacion">
-        <img class="header__nav__link__logo" alt="Logo de AluraGeek">
+        <img class="contacto__div__link__logo logo" alt="Logo de AluraGeek">
             <nav class="listaNavegacion__navegacion">
                 <ul>
                     <li class="listaNavegacion__enlace"><a href="#">Quienes somos</a></li>
