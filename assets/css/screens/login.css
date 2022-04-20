@@ -1,10 +1,12 @@
 .login {
     padding: 2.5rem 2rem;
-    text-align: -moz-center;
 }
 
 .login__formulario {
-    max-width: 412px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 275px;
 }
 
 .form__label {
@@ -14,15 +16,22 @@
 
 .button-entrar {
     display: block;
+    margin: auto;
     margin-top: 1rem;
     padding: 1rem 1rem;
-    min-width: 109px;
+    width: 109px;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     
+    .login__formulario {
+        max-width: 412px;
+    }
+
     .button-entrar  {
-        width: -moz-available;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
     }
 }

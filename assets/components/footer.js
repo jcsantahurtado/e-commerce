@@ -61,8 +61,10 @@ footerTemplate.innerHTML = `
 
         .footer__social-row {
             display: flex;
-            justify-content: space-evenly;
-            width: 20%;
+        }
+
+        .footer__social-row li {
+            padding-left: 1rem;
         }
         
     

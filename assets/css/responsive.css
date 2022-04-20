@@ -41,12 +41,12 @@
     .header-barraBusca__wrapper {
         display: block;
         order: 2;
-        width: -moz-available;
+        width: inherit;
         max-width: 390px;
     }
 
     .header-barraBusca__wrapper__form input {
-        width: -moz-available;
+        width: 100%;
     }
 
     .header-barraBusca__wrapper {

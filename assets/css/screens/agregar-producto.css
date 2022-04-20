@@ -1,9 +1,10 @@
 .agregarProducto {
-    padding: 2.5rem 1rem;
-    text-align: -moz-center;
+    padding: 2.5rem 2rem;
+    *text-align: -moz-center;
 }
 
 .resgistro__formulario {
+    margin: auto;
     max-width: 560px;
 }
 
@@ -18,7 +19,7 @@
 }
 
 .button-agregar {
-    width: -moz-available;
+    width: 100%;
 }
 
 .drag-area {
