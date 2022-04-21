@@ -75,6 +75,10 @@
         margin-right: 1rem;
     }
 
+    .productos__card:nth-child(2) {
+        margin-right: 1rem;
+    }
+
     .productos__card:nth-child(4) {
         margin-right: 0;
     }
