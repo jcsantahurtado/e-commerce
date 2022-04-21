@@ -76,12 +76,14 @@
     line-height: 19px;
 }
 
-.productos__card___descripcion a {
+.productos__card___enlace {
     color: #2A7AE4;
+    display: block;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
+    padding-top: .5rem;
     text-decoration: none;
 }

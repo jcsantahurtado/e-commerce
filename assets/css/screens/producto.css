@@ -1,5 +1,6 @@
 .producto__card {
     margin: initial;
+    padding: 2rem 0;
     width: auto;
 }
 
@@ -12,7 +13,11 @@
 
 .productos__card___base,
 .productos__items {
-    padding: 0 1rem;
+    *padding: 0 1rem;
+}
+
+.producto__card___base {
+    padding-left: 1rem;
 }
 
 .productos__card___base {
@@ -27,35 +32,47 @@
 }
 
 
- /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {
-     
- }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
     .producto__card {
         align-items: center;
         display: flex;
-        padding: 1rem 1rem;
+        *padding: 1rem 1rem;
     }
- }
- 
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
     .producto__card {
         margin: auto;
         width: 88%;
     }
-     
- }
- 
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {
-     
- }
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
-     
- } 
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .productos__card {
+        width: calc((100% / 5) - .8rem);
+    }
+
+    .productos__card___imagen-producto {
+        height: 403px;
+        width: 560px;
+        min-width: auto;
+        object-fit: cover;
+    }
+
+    .producto__card___titulo {
+        font-weight: 500;
+        font-size: 52px;
+        line-height: 61px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
