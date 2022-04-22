@@ -1,30 +1,31 @@
 var productos = document.querySelector(".productos");
-productos.addEventListener("click", obterDivProductos);
+productos.addEventListener("click", obterElementosProductos);
 
-function obterDivProductos(event) {
+function obterElementosProductos(event) {
     // event.preventDefault();
-
     const etiqueta = event.target;
-    const productosContenido = etiqueta.closest('.productos__contenido');
+    const listaProductos = etiqueta.closest('.productos__contenido');
     const cardSeleccionada = etiqueta.closest('.productos__card');
 
+    var imagenes = listaProductos.querySelectorAll('.productos__card___imagen');
+    var nombres = listaProductos.querySelectorAll('.productos__card___titulo');
+    var precios = listaProductos.querySelectorAll('.productos__card___precio');
+
+    var verImagen = cardSeleccionada.querySelectorAll('.productos__card___imagen');
+    var verNombre = cardSeleccionada.querySelectorAll('.productos__card___titulo');
+    var verPrecio = cardSeleccionada.querySelectorAll('.productos__card___precio');
+
     productos = [];
-    guardarDatosProducto(cardSeleccionada);
+    guardarDatosProducto(verImagen[0], verNombre[0], verPrecio[0]);
 
-    for (let i = 0; i < productosContenido.children.length; i++) {
+    for (let i = 0; i < imagenes.length; i++) {
 
-        var productoContenido = productosContenido.children[i];
-        
-        if (productoContenido != cardSeleccionada) {
-            console.log(`Hola`);
-
-            guardarDatosProducto(productoContenido);
-
+        if (verImagen[0] != imagenes[i]) {
+            guardarDatosProducto(imagenes[i], nombres[i], precios[i]);
         }
     }
 
     localStorage.setItem('datosProductos', JSON.stringify(productos));
-
 }
 
 
@@ -36,30 +37,29 @@ function Producto(imageUrl, name, precio) {
 
 var productos = [];
 
-function obtenerUrl(cardSeleccionada) {  // Obtengo la url del producto
-    var image = cardSeleccionada.querySelector('.productos__card___imagen').attributes;
+function obtenerUrl(cardImage) {  // Obtengo la url del producto
+    var image = cardImage.attributes;
     var imageUrl = image.src;
     var obtenerUrl = imageUrl.nodeValue;
     return obtenerUrl.substr(-6, 6);
 }
 
-function obtenerNombre(cardSeleccionada) {  // Obtengo el nombre del producto
-    var obtenerN = cardSeleccionada.querySelector('.productos__card___titulo').textContent;
+function obtenerNombre(cardTitulo) {  // Obtengo el nombre del producto
+    var obtenerN = cardTitulo.textContent;
     return obtenerN;
 }
 
-function obtenerPrecio(cardSeleccionada) {  // Obtengo el precio del producto
-    var obtenerP = cardSeleccionada.querySelector('.productos__card___precio').textContent;
+function obtenerPrecio(cardPrecio) {  // Obtengo el precio del producto
+    var obtenerP = cardPrecio.textContent;
     return obtenerP;
 }
 
-function guardarDatosProducto(cardSeleccionada) {
+function guardarDatosProducto(cardImagen, cardTitulo, cardPrecio) {
 
     var prod = new Producto(
-        obtenerUrl(cardSeleccionada), 
-        obtenerNombre(cardSeleccionada), 
-        obtenerPrecio(cardSeleccionada));
+        obtenerUrl(cardImagen),
+        obtenerNombre(cardTitulo),
+        obtenerPrecio(cardPrecio));
 
     productos.push(prod);
-    console.log(productos);
 }
