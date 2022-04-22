@@ -61,13 +61,14 @@
                         <label class="input-label" for="precio">Precio del producto</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
+
                     <div class="input-container">
-                        <textarea name="descripción" id="descripción" class="input" placeholder="Descripción del producto" 
-                            required data-tipo="descripcion" pattern="[\s\S]{6,30}" minlength="6" cols="30" rows="3"></textarea>
-                        <label class="input-label input-label--descripción" for="descripción">Descripción del
-                            producto</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <textarea name="descripcion" id="descripcion" class="input" placeholder="Describe tu producto" required
+                            minlength="10" maxlength="120" data-tipo="descripcion" cols="30" rows="3"></textarea>
+                        <label class="input-label input-label--message" for="descripcion">Descripción del producto</label>
+                        <span class="input-message-error input-message-error--descripcion">Este campo no es valido</span>
                     </div>
+
                 </fieldset>
                 <button class="button button-agregar">Agregar Producto</button>
             </form>
