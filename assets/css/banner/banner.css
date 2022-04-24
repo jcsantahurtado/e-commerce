@@ -1,4 +1,6 @@
 .banner {
     background: url(../../img/banner.png) no-repeat center / cover;
+    background-blend-mode: darken;
+    transition: all 700ms;
     padding: 5rem .5rem 2rem .5rem;
 }

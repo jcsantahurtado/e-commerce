@@ -1,0 +1,162 @@
+/* Buscador de contenido */
+
+#ctn-icon-search {
+    *position: absolute;
+    right: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ctn-icon-search i {
+    font-size: 18px;
+    color: #777777;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#ctn-icon-search i:hover {
+    color: #46a2fd;
+}
+
+/* única que modifiqué */
+#ctn-bars-search {
+    position: fixed;
+    top: -65px;
+    width: 88%;
+    background: #FFFFFF;
+    padding: 20px;
+    *z-index: 1;
+    transition: all 600ms;
+}
+
+.header-barraBusca__wrapper {
+    background-color: #FFFFFF;
+    left: 0;
+    position: absolute;
+    transition: all 600ms;
+    top: 42px;
+    width: 100%;
+    z-index: -1;
+}
+
+.header-barraBusca__wrapper-mostrar {
+    top: 74px;
+}
+
+.icon-search-activo {
+    color: #46a2fd;
+}
+
+.oculto {
+    display: none;
+}
+
+.banner-ctn-search {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#ctn-bars-search input {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0;
+}
+
+
+.box-search {
+    position: fixed;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: #FFFFFF;
+    *z-index: 0;
+    *overflow: hidden;  /* recorta todo lo que este fuera del contenedor */
+    display: none;
+    list-style: none;
+}
+
+.box-search-activo {
+    display: block;
+}
+
+.box-search li a {
+    display: block;
+    *width: 80%;
+    color: #777777;
+    padding: 12px 20px;
+}
+
+.box-search li a:hover {
+    background: #F3F3F3;
+}
+
+.box-search li a i {
+    margin-right: 10px;
+    color: #777777;
+}
+
+
+#cover-ctn-search {
+    width: 100%;
+    height: 10px;
+    position: fixed;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
+    display: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .header-barraBusca__wrapper__form button {
+        display: none;
+    }
+
+    .header-utilitario-busca {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .header-utilitario-busca {
+        display: none;
+    }
+
+    .header-barraBusca__wrapper {
+        display: block;
+        order: 2;
+        position: inherit;
+        top: auto;
+        transition: none;
+        z-index: auto;
+    }
+
+    .header-barraBusca__wrapper__form input {
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}

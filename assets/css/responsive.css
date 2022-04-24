@@ -1,26 +1,14 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .header-barraBusca__wrapper {
-        display: none;
-    }
 
     .header__nav__wrapper {
         width: 61.09%;
     }
 
-    .header-utilitario-busca {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
-    .header-utilitario-busca {
-        display: none;
-    }
 
     .header__nav__link {
         order: 1;
@@ -36,21 +24,6 @@
     .header__nav__link,
     .header__nav__wrapper {
         width: initial;
-    }
-
-    .header-barraBusca__wrapper {
-        display: block;
-        order: 2;
-        width: inherit;
-        max-width: 390px;
-    }
-
-    .header-barraBusca__wrapper__form input {
-        width: 100%;
-    }
-
-    .header-barraBusca__wrapper {
-        order: 2;
     }
 
     .banner {

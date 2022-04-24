@@ -39,7 +39,7 @@ headerTemplate.innerHTML = `
         .header-utilitario-busca {
             color: #464646;
             font-size: 17.5px;
-            padding-left: 1rem;
+            margin-left: 1rem;
             height: 24px;
             width: 24px;
         }  
@@ -78,6 +78,7 @@ headerTemplate.innerHTML = `
             font-size: 14px;
             line-height: 16px;
             padding: .5rem 1rem;
+            width: 100%;
         }
 
         .header-barraBusca__wrapper__form input:focus {
@@ -100,7 +101,7 @@ headerTemplate.innerHTML = `
             </a>
             <div class="header__nav__wrapper">
                 <div class="header-utilitario-busca header-utilitario-busca--home">
-                    <i class="fa fa-search"></i>
+                    <i class="fa fa-search icon-search"></i>
                 </div>
                 <a href=${urlLoginHtml} class="header__nav__link--login">Login</a>
             </div>
@@ -111,6 +112,11 @@ headerTemplate.innerHTML = `
                     <button class="" type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
+            <ul class="box-search">
+                <li><a href="#"><i class="fa fa-search"></i>Star Wars</a></li>
+                <li><a href="#"><i class="fa fa-search"></i>Consolas</a></li>
+                <li><a href="#"><i class="fa fa-search"></i>Diversos</a></li>
+            </ul>
         </nav>
     </header>
 `;
@@ -124,10 +130,11 @@ class Header extends HTMLElement {
         const fontAwesome = document.querySelector('link[href*="font-awesome"]');
         const bases = document.querySelector('link[href*="bases"]');
         const logo = document.querySelector('link[href*="logo"]');
+        const buscador = document.querySelector('link[href*="buscador"]');
 
         const responsive = document.querySelector('link[href*="responsive"]');
 
-        const shadowRoot = this.attachShadow({ mode: 'closed' });
+        const shadowRoot = this.attachShadow({ mode: 'open' });
 
         if (fontAwesome) {
             shadowRoot.appendChild(fontAwesome.cloneNode());
@@ -139,6 +146,10 @@ class Header extends HTMLElement {
 
         if (logo) {
             shadowRoot.appendChild(logo.cloneNode());
+        }
+
+        if (buscador) {
+            shadowRoot.appendChild(buscador.cloneNode());
         }
 
         if (responsive) {
