@@ -1,3 +1,7 @@
+.producto {
+    padding-bottom: 1rem;
+}
+
 .producto__card___base {
     padding: 0 1rem;
 }
@@ -23,12 +27,6 @@
     flex-wrap: wrap;
 }
 
-.producto__card {
-    margin: initial;
-    padding: 2rem 0;
-    width: auto;
-}
-
 .productos__card:nth-last-child(2n+1) {
     margin-right: auto;
 }
@@ -45,7 +43,7 @@
 }
 
 .productos__items {
-    padding: 0 1rem;
+    padding: 1rem 1rem;
 }
 
 .producto__card___base {
@@ -95,8 +93,8 @@
     }
 
     .productos__card___imagen-producto {
-        height: 403px;
-        width: 560px;
+        height: 370.76px;
+        width: 515.2px;
         min-width: auto;
         object-fit: cover;
     }
