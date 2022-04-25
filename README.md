@@ -1,4 +1,4 @@
-# https://jcsantahurtado.github.io/e-commerce/
+# e-commerce AluraGeek
 Challenge Oracle ONE Front-End_
 
 - Semana 7 y 8: Creando mi primer e-commerce con HTML e CSS
