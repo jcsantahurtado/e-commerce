@@ -24,12 +24,12 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    
+
     .login__formulario {
         max-width: 412px;
     }
 
-    .button-entrar  {
+    .button-entrar {
         margin-left: 0;
         margin-right: 0;
         width: auto;

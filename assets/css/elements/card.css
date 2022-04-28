@@ -1,6 +1,7 @@
 .productos__card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     margin-right: 1rem;
+    margin-bottom: 1.25rem;
     width: calc(50% - .5rem);
 }
 
@@ -13,7 +14,7 @@
 }
 
 .productos__card___base {
-    padding: .25rem 0 .75rem .1rem;
+    padding: .25rem 0 .75rem .2rem;
 }
 
 .productos__card___titulo {
@@ -42,7 +43,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    padding-top: .5rem;
+    margin-top: .5rem;
     text-decoration: none;
 }
 

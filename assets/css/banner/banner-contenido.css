@@ -1,3 +1,19 @@
+.banner__contenido {
+    display: grid;
+    *flex-direction: column;
+    *justify-content: end;
+    position: fixed;
+    top: 35%;
+    height: auto;
+    width: 100%;
+    transition: all 600ms;
+    *background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner__contenido * {
+    margin-left: 1rem;
+}
+
 .banner__titulo {
     color: #FFFFFF;
     font-family: 'Raleway';
@@ -5,6 +21,7 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
 }
 
 .banner__descripcion {
@@ -25,5 +42,27 @@
     font-size: 14px;
     line-height: 16px;
     padding: 12px 16px;
-    text-decoration: none;    
+    text-decoration: none;
+    max-width: 118px;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .banner__contenido {
+
+        top: 50%;
+
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .banner__contenido {
+        top: 44%;
+        padding-left: 6%;
+        padding-bottom: 6%;
+    }
 }

@@ -26,10 +26,6 @@
         width: initial;
     }
 
-    .banner {
-        padding-left: 1rem;
-    }
-
     .banner__titulo {
         font-size: 52px;
         line-height: 61px;
@@ -39,7 +35,7 @@
         font-size: 22px;
         line-height: 26px;
     }
-    
+
     .productos__card {
         width: calc(25% - .75rem);
     }
@@ -58,9 +54,9 @@
 
     .contacto {
         display: grid;
-        grid-template-areas: 
-        "card-listaNavegacion"
-        "card-form"
+        grid-template-areas:
+            "card-listaNavegacion"
+            "card-form"
         ;
         grid-template-columns: 40% 60%;
         grid-template-rows: auto;
@@ -69,18 +65,15 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    
+
     .header__nav__wrapper {
         justify-content: initial;
         width: 35%;
     }
 
     .header__nav__link {
-        width: 182px;;
-    }
-
-    .banner {
-        padding-left: 6%;
+        width: 182px;
+        ;
     }
 
     .productos__items {
@@ -99,10 +92,6 @@
     .header__nav__wrapper {
         margin-left: initial;
         width: 50%;
-    }
-
-    .banner {
-        padding-left: 5rem;
     }
 
     .header__nav__link--login {
@@ -127,9 +116,9 @@
 
     .listaNavegacion {
         display: grid;
-        grid-template-areas: 
-        "card-lista-imagen"
-        "card-lista-lista"
+        grid-template-areas:
+            "card-lista-imagen"
+            "card-lista-lista"
         ;
         grid-template-columns: 40% 60%;
         grid-template-rows: auto;
@@ -137,6 +126,4 @@
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    
-}
+@media only screen and (min-width: 1200px) {}

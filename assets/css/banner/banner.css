@@ -1,6 +1,40 @@
 .banner {
+    contain: content;
+    position: relative;
+}
+
+.banner__bg {
     background: url(../../img/banner.png) no-repeat center / cover;
     background-blend-mode: darken;
     transition: all 700ms;
-    padding: 5rem .5rem 2rem .5rem;
+    height: 192px;
+    width: 100%;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .banner__bg {
+        height: 352px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .banner__contenido {
+        padding-left: 6%;
+        padding-bottom: 6%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    ...
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    ...
 }

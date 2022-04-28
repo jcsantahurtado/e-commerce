@@ -1,6 +1,5 @@
 .agregarProducto {
     padding: 2.5rem 2rem;
-    *text-align: -moz-center;
 }
 
 .resgistro__formulario {
@@ -8,7 +7,7 @@
     max-width: 560px;
 }
 
-.input-container > button {
+.input-container button {
     position: absolute;
     width: 100%;
     height: 100%;
