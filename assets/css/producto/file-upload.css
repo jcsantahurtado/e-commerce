@@ -50,18 +50,13 @@
 
 .input-container span {
     display: none;
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-
-    /* identical to box height, or 125% */
     align-items: center;
     text-align: center;
-
-    /* Preto/100% */
     color: #464646;
 }
 
@@ -113,7 +108,7 @@
         display: initial;
     }
 
-    .input-container>button {
+    .input-container button {
         padding-top: initial;
         position: initial;
         width: 40%;

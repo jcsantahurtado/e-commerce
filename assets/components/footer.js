@@ -104,7 +104,7 @@ footerTemplate.innerHTML = `
         </form>
     </section>
     <footer class="footer">
-            <a class="footer__link" href="#">Desarrollado por Juan Carlos</a>
+            <a class="footer__link" href="https://jcsantahurtado.github.io/portfolio/" target="_blank">Desarrollado por Juan Carlos</a>
             <ul class="footer__social-row">
                 <li><a class="footer__link" href="https://github.com/jcsantahurtado" target="_blank"><i class="fab fa-github"></i></a></li>
                 <li><a class="footer__link" href="https://twitter.com/jcsantahurtado" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -120,14 +120,12 @@ class Footer extends HTMLElement {
 
     connectedCallback() {
 
-
         const fontAwesome = document.querySelector('link[href*="font-awesome"]');
         const reset = document.querySelector('link[href*="reset"]');
         const bases = document.querySelector('link[href*="bases"]');
         const logo = document.querySelector('link[href*="logo"]');
         const inputs = document.querySelector('link[href*="inputs"]');
         const buttons = document.querySelector('link[href*="buttons"]');
-
         const responsive = document.querySelector('link[href*="responsive"]');
 
         const shadowRoot = this.attachShadow({ mode: 'open' });
@@ -160,11 +158,7 @@ class Footer extends HTMLElement {
             shadowRoot.appendChild(responsive.cloneNode());
         }
 
-
         shadowRoot.appendChild(footerTemplate.content);
-        // console.log(this.shadowRoot.querySelector('.input'));
-        // console.log(this);
-
     }
 }
 

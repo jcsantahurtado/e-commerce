@@ -93,7 +93,6 @@ headerTemplate.innerHTML = `
         }
     </style>
 
-
     <header class="header">
         <nav class="header__nav--home">
             <a href=${urlIndexHtml} class="header__nav__link">
@@ -131,7 +130,6 @@ class Header extends HTMLElement {
         const bases = document.querySelector('link[href*="bases"]');
         const logo = document.querySelector('link[href*="logo"]');
         const buscador = document.querySelector('link[href*="buscador"]');
-
         const responsive = document.querySelector('link[href*="responsive"]');
 
         const shadowRoot = this.attachShadow({ mode: 'open' });

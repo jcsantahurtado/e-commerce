@@ -8,7 +8,7 @@
     padding-bottom: 1.5rem;
 }
 
-.listaNavegacion__enlace{
+.listaNavegacion__enlace {
     padding: .5rem 0;
 }
 
@@ -20,19 +20,4 @@
     font-size: 16px;
     line-height: 19px;
     text-decoration: none;
-}
-
-.form__label {
-    color: #464646;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-}
-
-.input-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
 }
