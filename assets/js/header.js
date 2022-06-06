@@ -1,26 +1,18 @@
 const crearHeader = () => {
 
     let header = document.querySelector('.header');
-    let tituloPag = document.title;
-    let urlSearchHtml = '';
-
-    if (tituloPag == 'AluraGeek') {
-        urlSearchHtml = 'assets/screens/search.html';
-    } else {
-        urlSearchHtml = '../screens/search.html';
-    }
 
     header.innerHTML = `
         <nav class="header__nav">
 
             <div class="header__wrapper--home">
 
-                <a href="/index.html">
+                <a href="index.html">
                     <img class="header__logo logo" alt="Logo AluraGeek">
                 </a>
 
                 <div class="header__search-container">
-                    <form action="${urlSearchHtml}">
+                    <form action="search.html">
 
                         <input type="text" placeholder="¿Qué deseas buscar?" name="search">
                         <button type="submit"><img alt="buscar"></button>

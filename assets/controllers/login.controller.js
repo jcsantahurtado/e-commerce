@@ -6,10 +6,10 @@ btnLogin.addEventListener('click', () => {
 
     const email = document.querySelector('#email');
     const password = document.querySelector('#password');
-    
+
     clientServices
-    .detailUser(email.value)
-    .then((respuesta) => {
+        .detailUser(email.value)
+        .then((respuesta) => {
 
             if (!respuesta.length) {
 

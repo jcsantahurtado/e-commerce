@@ -18,9 +18,9 @@ const crearDivProdutosInfo = (categoria) => {
     btnVerTodo.addEventListener('click', () => {
 
         if (!sessionStorage.user) {
-            window.location.href = './assets/screens/login.html';
+            window.location.href = 'login.html';
         } else {
-            window.location.href = './assets/screens/productos.html';
+            window.location.href = 'productos.html';
         }
     })
 
@@ -44,11 +44,11 @@ const crearNuevaCard = (productServices, srcImage, nombre, precio, descripcion, 
             <h5 class="productos__card___base-titulo">${nombre}</h5>
             <span class="productos__card___base-precio">$ ${parseFloat(precio).toLocaleString()}</span>
             <p class="productos__card___base-descripcion">${descripcion}</p>
-            <a class="productos__card___base-enlace" href="/assets/screens/ver-producto.html?id=${id}&categoria=${categoria}">Ver producto</a>
+            <a class="productos__card___base-enlace" href="ver-producto.html?id=${id}&categoria=${categoria}">Ver producto</a>
         </div>
         <div class="productos__card___edit">
             <i class="fa-solid fa-trash" id="${id}"></i>
-            <a href="./crear-actualizar-producto.html?id=${id}">
+            <a href="crear-actualizar-producto.html?id=${id}">
                 <i class="fa-solid fa-pen"></i>
             </a>
         </div>`;
