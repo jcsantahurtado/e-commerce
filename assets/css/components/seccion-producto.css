@@ -1,0 +1,33 @@
+@import url(card.css);
+
+.productos__items {
+    padding: 1rem 0;
+}
+
+.productos__info {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem .5rem;
+}
+
+.productos__contenido {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .productos__items {
+        padding: 1rem 2rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .productos__items {
+        padding: 1rem 3rem;
+    }
+}

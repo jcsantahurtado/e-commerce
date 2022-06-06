@@ -1,0 +1,13 @@
+.button {
+    background: none;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    padding: .75rem 1rem;
+    transition: all 600ms;
+}

@@ -1,11 +1,11 @@
+@import url(bannner-contenido.css);
+
 .banner {
     contain: content;
-    position: relative;
 }
 
 .banner__bg {
     background: url(../../img/banner.png) no-repeat center / cover;
-    background-blend-mode: darken;
     transition: all 700ms;
     height: 192px;
     width: 100%;

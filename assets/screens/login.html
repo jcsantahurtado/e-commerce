@@ -6,61 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - AluraGeek</title>
-    <script src="https://kit.fontawesome.com/e20a5c8519.js" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
-    <script src="../components/header.js" type="text/javascript" defer></script>
-    <script src="../components/footer.js" type="text/javascript" defer></script>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e20a5c8519.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/bases.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/rodapie.css">
 
-    <link rel="stylesheet" href="../css/elements/logo.css">
-    <link rel="stylesheet" href="../css/elements/buscador.css">
-    <link rel="stylesheet" href="../css/elements/form.css">
-    <link rel="stylesheet" href="../css/elements/inputs.css">
-    <link rel="stylesheet" href="../css/elements/buttons.css">
-    
-    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/login.css">
+
 </head>
 
-<body class="app">
-    <header-component></header-component>
+<body>
 
-    <main class="contenido">
+    <a href=""></a>
+
+    <header class="header"></header>
+
+    <main>
         <section class="login">
-            <form action="./agregar-producto.html" class="login__formulario flex flex--column">
-                <fieldset>
-                    <legend class="form__label">Iniciar Sesión</legend>
-                    <div class="input-container">
-                        <input name="email" id="email" class="input" type="email" placeholder="Escriba su correo electrónico" required
-                            data-tipo="email">
-                        <label class="input-label" for="email">Escriba su correo electrónico</label>
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>
-                    <div class="input-container">
-                        <input type="password" name="password" id="password" class="input" placeholder="Escriba su contraseña" required  
-                        data-tipo="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$">
-                        <label class="input-label" for="password">Escriba su contraseña</label>
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>
-                </fieldset>
+
+            <div action="" class="login__formulario flex flex--column" name="formulario">
+                <h2 class="form__label">Iniciar Sesión</h2>
+                <div class="input-container">
+                    <input name="email" id="email" class="input" type="email"
+                        placeholder="Escriba su correo electrónico" required data-tipo="email">
+                    <label class="input-label" for="email">Escriba su correo electrónico</label>
+                    <span class="input-message-error input-message-error-email">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <input type="password" name="password" id="password" class="input"
+                        placeholder="Escriba su contraseña" required data-tipo="password"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" value="0000Ab">
+                    <label class="input-label" for="password">Escriba su contraseña</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
 
                 <button class="button button-entrar">Entrar</button>
 
-            </form>
+            </div>
+
         </section>
         
     </main>
 
-    <footer-component></footer-component>
+    <footer class="rodapie"></footer>
 
-    <script src="../js/app.js" type="module"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/rodapie.js"></script>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/valida.js" type="module"></script>
+    <script src="../js/header-search-container.js" type="module"></script>
+
+    <script src="../controllers/login.controller.js" type="module"></script>
 
 </body>
 

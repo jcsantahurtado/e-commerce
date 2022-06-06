@@ -1,0 +1,107 @@
+@import url(components/form.css);
+@import url(components/inputs.css);
+
+.contacto {
+    padding: 1rem 2rem;
+    background: #EAF2FD;
+}
+
+.contacto button {
+    background-color: #2A7AE4;
+    border: none;
+    color: #FFFFFF;
+    margin-top: 1rem;
+}
+
+.listaNavegacion {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.listaNavegacion__enlace {
+    padding: .5rem 0;
+}
+
+.listaNavegacion__enlace a {
+    color: #464646;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+}
+
+
+.datosDesarrollador {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5% 6%;
+}
+
+.datosDesarrollador__link {
+    color: #464646;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    text-decoration: none;
+}
+
+.datosDesarrollador__social-row {
+    display: flex;
+}
+
+.datosDesarrollador__social-row li {
+    padding-left: 1rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .header__nav__wrapper {
+        width: 61.09%;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .contacto {
+        display: grid;
+        grid-template-areas:
+            "card-listaNavegacion"
+            "card-form"
+        ;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .contacto {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .listaNavegacion {
+        display: grid;
+        grid-template-areas:
+            "card-lista-imagen"
+            "card-lista-lista"
+        ;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

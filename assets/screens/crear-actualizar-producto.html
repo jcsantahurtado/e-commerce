@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - AluraGeek</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e20a5c8519.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/rodapie.css">
+
+    <link rel="stylesheet" href="../css/crear-actualizar-producto.css">
+    <link rel="stylesheet" href="../css/crear-actualizar-producto/file-upload.css">
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <main class="contenido">
+        <section class="agregarProducto" style="contain: content;">
+
+            <img src="img/loader.gif" alt="" class="loader"> 
+
+            <form action="./productos.html" class="resgistro__formulario flex flex--column">
+                <fieldset>
+                    <legend class="form__label">Agregar nuevo producto</legend>
+
+                    <div class="input-container input-container-drag">
+                        <div class="drag-area">
+                            <div class="icon"><i class="fa-solid fa-image"></i></div>
+                            <header>Arrastre para agregar una imagen para el producto</header>
+                            <input type="file" data-tipo="imagen" hidden>
+                        </div>
+                        <span class="or">O</span>
+                        <a class="drag-button">Busque en su dispositivo</a>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="text" name="nombre" id="nombre" class="input" placeholder="Nombre del producto"
+                            required data-tipo="nombreProducto">
+                        <label class="input-label" for="nombre">Nombre del producto</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="precio" id="precio" class="input" placeholder="Precio del producto"
+                            required data-tipo="precio" pattern="\d{3,10}">
+                        <label class="input-label" for="precio">Precio del producto</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+
+                    <div class="input-container">
+                        <textarea name="descripcion" id="descripcion" class="input" placeholder="Describe tu producto"
+                            required minlength="10" maxlength="120" data-tipo="descripcion"></textarea>
+                        <label class="input-label input-label--message" for="descripcion">Descripción del
+                            producto</label>
+                        <span class="input-message-error input-message-error--descripcion">Este campo no es
+                            valido</span>
+                    </div>
+                    <div class="input-container">
+                        <label class="input-label input-label--categoria" for="descripcion">Categoria</label>
+                        <select name="categoria" id="categoria" class="input to-select">
+                            <option>Star Wars</option>
+                            <option>Consolas</option>
+                            <option>Diversos</option>
+                        </select>
+                    </div>
+
+                </fieldset>
+                <button class="button button-agregar">Agregar Producto</button>
+            </form>
+        </section>
+
+    </main>
+
+
+    <footer class="rodapie"></footer>
+
+
+    <script src="../js/header.js"></script>
+    <script src="../js/rodapie.js"></script>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/valida.js" type="module"></script>
+    <script src="../js/subir-archivo.js"></script>
+    <script src="../js/header-search-container.js" type="module"></script>
+    <script src="../js/valida.js" type="module"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../controllers/update-product.controller.js" type="module"></script>
+    <script src="../controllers/crear-producto.controller.js" type="module"></script>
+
+</body>
+
+</html>

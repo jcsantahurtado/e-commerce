@@ -1,0 +1,19 @@
+@import url(components/logo.css);
+@import url(components/button.css);
+@import url(components/seccion-producto.css);
+
+@import url(components/titulos.css);
+@import url(components/enlaces.css);
+
+
+.productos__titulo {
+    font-weight: normal;
+}
+
+.productos__titulo span {
+    font-weight: 700;
+}
+
+.productos__enlace {
+    display: none;
+}

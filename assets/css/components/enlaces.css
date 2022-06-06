@@ -1,0 +1,15 @@
+.productos__enlace {
+    background: none;
+    border: none;
+    color: #2A7AE4;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+.productos__enlace:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,32 @@
+@import url(components/logo.css);
+@import url(components/button.css);
+@import url(components/seccion-producto.css);
+@import url(components/titulos.css);
+@import url(components/loader.css);
+
+
+.productos__titulo {
+    padding-bottom: .75rem;
+}
+
+.productos__boton {
+    background-color: #2A7AE4;
+    border: none;
+    color: #FFFFFF;
+}
+
+.productos__card___edit {
+    display: block;
+}
+
+.productos__card:nth-child(n+5) {
+    display: grid;
+}
+
+.productos__card___base-descripcion {
+    display: block;
+}
+
+.productos__card___base-enlace {
+    display: none;
+}

@@ -1,5 +1,11 @@
+@import url(components/logo.css);
+@import url(components/button.css);
+@import url(components/form.css);
+@import url(components/inputs.css);
+
 .login {
-    padding: 2.5rem 2rem;
+    contain: content;
+    padding: 3.5rem 2rem 2.5rem;
 }
 
 .login__formulario {
@@ -15,6 +21,8 @@
 }
 
 .button-entrar {
+    background: #2A7AE4;
+    color: #FFFFFF;
     display: block;
     margin: auto;
     margin-top: 1rem;

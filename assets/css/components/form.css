@@ -1,0 +1,37 @@
+.form__label {
+    color: #464646;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: .75rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-container-img div,
+.drag-area.active {
+    contain: content;
+    width: fit-content;
+}
+
+.input-container-img img {
+    border-radius: 5px;
+    width: 10rem;
+}
+
+.input-container-img i,
+/* eliminar */
+.drag-area.active i {
+    color: #fff;
+    cursor: pointer;
+    padding: .5rem;
+    position: absolute;
+    top: 4px;
+    right: 6px;
+}

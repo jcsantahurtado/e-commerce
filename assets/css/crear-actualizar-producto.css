@@ -1,0 +1,30 @@
+@import url(login.css);
+@import url(components/loader.css);
+
+.agregarProducto {
+    padding: 2.5rem 2rem;
+}
+
+.resgistro__formulario {
+    margin: auto;
+    max-width: 560px;
+}
+
+.input-container a {
+    position: absolute;
+    width: calc(100%);
+    background: none;
+    border: none;
+    padding-top: 4.5rem;
+    padding-bottom: 3rem;
+    color: #A2A2A2;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button-agregar {
+    background-color: #2A7AE4;
+    border: none;
+    color: #FFFFFF;
+    width: 100%;
+}

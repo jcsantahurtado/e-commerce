@@ -6,261 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek</title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
-    <script src="https://kit.fontawesome.com/e20a5c8519.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
-    <script src="./assets/components/header.js" type="text/javascript" defer></script>
-    <script src="./assets/components/footer.js" type="text/javascript" defer></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/bases.css">
-    <link rel="stylesheet" href="./assets/css/banner/banner.css">
-    <link rel="stylesheet" href="./assets/css/banner/banner-contenido.css">
-    <link rel="stylesheet" href="./assets/css/productos/productos.css">
+    <script src="https://kit.fontawesome.com/e20a5c8519.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="./assets/css/elements/logo.css">
-    <link rel="stylesheet" href="./assets/css/elements/buscador.css">
-    <link rel="stylesheet" href="./assets/css/elements/card.css">
-    <link rel="stylesheet" href="./assets/css/elements/inputs.css">
-    <link rel="stylesheet" href="./assets/css/elements/buttons.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/rodapie.css">
 
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/widget.css">
 </head>
 
-<body class="app">
-    <header-component></header-component>
+<body>
 
-    <main class="contenido">
+    <a href=""></a>
+
+    <header class="header"></header>
+
+    <main class="principal">
         <section class="banner">
             <div class="banner__bg"></div>
             <div class="banner__contenido">
-                <h2 class="banner__titulo">Abril Promocional</h2>
+                <h2 class="banner__titulo">Mayo Promocional</h2>
                 <p class="banner__descripcion">Productos selecionados con 25% de descuento</p>
-                <a class="banner__boton" href="#consolas">Ver Consolas</a>
+                <a class="banner__enlace" href="#consolas">Ver Consolas</a>
             </div>
         </section>
 
-        <section class="productos">
-            <div class="productos__items">
-                <div class="productos__info">
-                    <div class="productos__header">
-                        <h4 class="productos__titulo">
-                            Star Wars
-                        </h4>
-                        <button class="productos__boton">
-                            Ver todo <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="productos__contenido">
-                    <div class="productos__card">
-                        <img class="productos__card___imagen" src="./assets/img/productos/11.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Producto XYZ</h5>
-                            <span class="productos__card___precio">$ 42.943,00</span>
-                            <a class="productos__card___enlace" id="myId" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                    <div class="productos__card">
-                        <img class="productos__card___imagen" src="./assets/img/productos/12.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Producto XYZ</h5>
-                            <span class="productos__card___precio">$ 45.943,00</span>
-                            <a class="productos__card___enlace" id="myId" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                    <div class="productos__card">
-                        <img class="productos__card___imagen" src="./assets/img/productos/13.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Producto XYZ</h5>
-                            <span class="productos__card___precio">$ 40.943,00</span>
-                            <a class="productos__card___enlace" id="myId" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                    <div class="productos__card">
-                        <img class="productos__card___imagen" src="./assets/img/productos/14.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Producto XYZ</h5>
-                            <span class="productos__card___precio">$ 49.943,00</span>
-                            <a class="productos__card___enlace" id="myId" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                    <div class="productos__card oculto">
-                        <img class="productos__card___imagen" src="./assets/img/productos/15.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Producto XYZ</h5>
-                            <span class="productos__card___precio">$ 45.943,00</span>
-                            <a class="productos__card___enlace" id="myId" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                    <div class="productos__card oculto">
-                        <img class="productos__card___imagen" src="./assets/img/productos/16.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Producto XYZ</h5>
-                            <span class="productos__card___precio">$ 43.943,00</span>
-                            <a class="productos__card___enlace" id="myId" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section class="productos" style="contain: content; min-height: 12rem;">
 
-            <div class="productos__items" id="consolas">
-                <div class="productos__info">
-                    <div class="productos__header">
-                        <h4 class="productos__titulo">
-                            Consolas
-                        </h4>
-                        <button class="productos__boton">
-                            Ver todo <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="productos__contenido">
-                    <div class="productos__card">
-                        <img class="productos__card___imagen" src="./assets/img/productos/21.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Control XYZ</h5>
-                            <span class="productos__card___precio">$ 37.943,00</span>
-                            <a class="productos__card___enlace" id="myId" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                    <div class="productos__card">
-                        <img class="productos__card___imagen" src="./assets/img/productos/22.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Control y consola XYZ</h5>
-                            <span class="productos__card___precio">$ 39.943,00</span>
-                            <a class="productos__card___enlace" id="myId" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                    <div class="productos__card">
-                        <img class="productos__card___imagen" src="./assets/img/productos/23.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Consola XYZ</h5>
-                            <span class="productos__card___precio">$ 57.943,00</span>
-                            <a class="productos__card___enlace" id="myId" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                    <div class="productos__card">
-                        <img class="productos__card___imagen" src="./assets/img/productos/24.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Control XYZ</h5>
-                            <span class="productos__card___precio">$ 47.943,00</span>
-                            <a class="productos__card___enlace" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                    <div class="productos__card oculto">
-                        <img class="productos__card___imagen" src="./assets/img/productos/25.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Producto XYZ</h5>
-                            <span class="productos__card___precio">$ 34.943,00</span>
-                            <a class="productos__card___enlace" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                    <div class="productos__card oculto">
-                        <img class="productos__card___imagen" src="./assets/img/productos/26.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Producto XYZ</h5>
-                            <span class="productos__card___precio">$ 39.943,00</span>
-                            <a class="productos__card___enlace" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <img src="img/loader.gif" alt="" class="loader">            
+            <!-- Contenido -->
 
-            <div class="productos__items">
-                <div class="productos__info">
-                    <div class="productos__header">
-                        <h4 class="productos__titulo">
-                            Diversos
-                        </h4>
-                        <button class="productos__boton">
-                            Ver todo <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="productos__contenido">
-                    <div class="productos__card">
-                        <img class="productos__card___imagen" src="./assets/img/productos/31.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Camisa Atari</h5>
-                            <span class="productos__card___precio">$ 57.943,00</span>
-                            <a class="productos__card___enlace" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                    <div class="productos__card">
-                        <img class="productos__card___imagen" src="./assets/img/productos/32.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Camisa SNES</h5>
-                            <span class="productos__card___precio">$ 54.943,00</span>
-                            <a class="productos__card___enlace" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                    <div class="productos__card">
-                        <img class="productos__card___imagen" src="./assets/img/productos/33.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Control y consola XYZ</h5>
-                            <span class="productos__card___precio">$ 37.943,00</span>
-                            <a class="productos__card___enlace" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                    <div class="productos__card">
-                        <img class="productos__card___imagen" src="./assets/img/productos/34.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Control y consola XYZ</h5>
-                            <span class="productos__card___precio">$ 50.943,00</span>
-                            <a class="productos__card___enlace" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                    <div class="productos__card oculto">
-                        <img class="productos__card___imagen" src="./assets/img/productos/35.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Producto XYZ</h5>
-                            <span class="productos__card___precio">$ 53.943,00</span>
-                            <a class="productos__card___enlace" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                    <div class="productos__card oculto">
-                        <img class="productos__card___imagen" src="./assets/img/productos/36.svg">
-                        <div class="productos__card___base">
-                            <h5 class="productos__card___titulo">Producto XYZ</h5>
-                            <span class="productos__card___precio">$ 55.943,00</span>
-                            <a class="productos__card___enlace" href="./assets/screens/producto.html">Ver
-                                producto</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
     </main>
 
-    <footer-component></footer-component>
+    <footer class="rodapie"></footer>
 
-    <script src="./assets/js/app.js" type="module"></script>
-    <script src="./assets/js/script.js" type="module"></script>
-    <script src="./assets/js/buscador.js" type="module"></script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/rodapie.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/valida.js" type="module"></script>
+    <script src="assets/js/header-search-container.js"></script>
+
+    <script src="assets/controllers/home.controller.js" type="module"></script>
+    
 
 </body>
 

@@ -1,0 +1,13 @@
+.widget {
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    transition: all 600ms;
+    width: 100%;
+}
+
+.visible {
+    display: block;
+}

@@ -1,4 +1,5 @@
 export function valida(input) {
+
     const tipoDeInput = input.dataset.tipo;
 
     if (input.validity.valid && input.checkValidity()) {

@@ -1,0 +1,137 @@
+.productos__card {
+    contain: content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.25rem;
+    margin-right: 1rem;
+    width: calc(50% - .5rem);
+    display: grid;
+    grid-template-areas: "card-imagen""card-base";
+    grid-template-columns: 100%;
+    grid-template-rows: 11.875rem auto;
+}
+
+.productos__card:nth-child(+n+5) {
+    display: none;
+}
+
+.productos__card___imagen {
+    grid-area: card-imagen;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.productos__card___base {
+    grid-area: card-base;
+    padding: .25rem .2rem .75rem;
+}
+
+.productos__card___base-titulo {
+    display: block ruby;
+    overflow: auto;
+    color: #464646;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: .5rem 0;
+}
+
+.productos__card___base-precio {
+    color: #464646;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: .5rem 0;
+}
+
+.productos__card___base-descripcion {
+    color: #464646;
+    display: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding: .5rem 0;
+}
+
+.productos__card___base-enlace {
+    color: #2A7AE4;
+    display: block;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: .5rem;
+    text-decoration: none;
+}
+
+.productos__card___edit {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.productos__card___edit i {
+    margin: .5rem .5rem 0 0;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .productos__card___imagen {
+        *height: 11.875rem;
+        *object-fit: cover;
+    }
+
+    .productos__card:nth-of-type(2n) {
+        margin-right: 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .productos__card {
+        margin-right: 1rem;
+        width: calc(25% - .75rem);
+    }
+
+    .productos__card:nth-of-type(4n) {
+        margin-right: 0;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .productos__card {
+        width: calc((100% / 6) - .84rem);
+    }
+
+    .productos__card:nth-child(-n+6) {
+        display: grid;
+    }
+
+    .productos__card:nth-of-type(4n) {
+        margin-right: 1rem;
+    }
+
+    .productos__card:nth-of-type(6n) {
+        margin-right: 0;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
