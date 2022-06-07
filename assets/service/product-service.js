@@ -1,9 +1,9 @@
 const listProductos = () =>
-    fetch('http://localhost:3000/producto').then(respuesta => respuesta.json());
+    fetch('https://my-ecom-website-ex.herokuapp.com/producto').then(respuesta => respuesta.json());
 
 
 const createProduct = (image, nombre, precio, descripcion, categoria, fechaUltimaActualizacion) => {
-    return fetch(`http://localhost:3000/producto`, {
+    return fetch(`https://my-ecom-website-ex.herokuapp.com/producto`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -13,17 +13,17 @@ const createProduct = (image, nombre, precio, descripcion, categoria, fechaUltim
 }
 
 const removeProduct = (id) => {
-    return fetch(`http://localhost:3000/producto/${id}`, {
+    return fetch(`https://my-ecom-website-ex.herokuapp.com/producto/${id}`, {
         method: 'DELETE'
     })
 }
 
 const detailProduct = (id) => {
-    return fetch(`http://localhost:3000/producto/${id}`).then((respuesta) => respuesta.json());
+    return fetch(`https://my-ecom-website-ex.herokuapp.com/producto/${id}`).then((respuesta) => respuesta.json());
 }
 
 const updateProduct = (image, nombre, precio, descripcion, categoria, fechaUltimaActualizacion, id) => {
-    return fetch(`http://localhost:3000/producto/${id}`, {
+    return fetch(`https://my-ecom-website-ex.herokuapp.com/producto/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -35,7 +35,7 @@ const updateProduct = (image, nombre, precio, descripcion, categoria, fechaUltim
 }
 
 const searchByCategoryProduct = (categoria) => {
-    return fetch(`http://localhost:3000/producto?categoria=${categoria}`).then((respuesta) => respuesta.json());
+    return fetch(`https://my-ecom-website-ex.herokuapp.com/producto?categoria=${categoria}`).then((respuesta) => respuesta.json());
 }
 
 export const productServices = {
