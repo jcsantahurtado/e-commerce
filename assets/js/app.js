@@ -44,7 +44,7 @@ const crearNuevaCard = (productServices, srcImage, nombre, precio, descripcion, 
             <h5 class="productos__card___base-titulo">${nombre}</h5>
             <span class="productos__card___base-precio">$ ${parseFloat(precio).toLocaleString()}</span>
             <p class="productos__card___base-descripcion">${descripcion}</p>
-            <a class="productos__card___base-enlace" href="assets/screens/ver-producto.html?id=${id}&categoria=${categoria}">Ver producto</a>
+            <a class="productos__card___base-enlace" href="/../assets/screens/ver-producto.html?id=${id}&categoria=${categoria}">Ver producto</a>
         </div>
         <div class="productos__card___edit">
             <i class="fa-solid fa-trash" id="${id}"></i>

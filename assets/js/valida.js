@@ -17,9 +17,9 @@ btnLogin.addEventListener('click', (e) => {
     const user = sessionStorage.user || null;
     if (user) {
         sessionStorage.clear();
-        window.location.href = urlIndex;
+        window.location.href = '/../index.html';
     } else {
-        window.location.href = urlLogin;
+        window.location.href = '/../assets/screens/login.html';
     }
 });
 

@@ -1,14 +1,3 @@
-let actualUrl = document.URL;
-let urlIndex = 'index.html';
-var urlLogin = 'assets/screens/login.html';
-var urlSearch = 'assets/screens/search.html';
-
-if (!actualUrl.includes('index')) {
-    urlIndex = '../../index.html';
-    urlLogin = 'login.html';
-    urlSearch = 'search.html'
-}
-
 const crearHeader = () => {
 
     let header = document.querySelector('.header');
@@ -18,12 +7,12 @@ const crearHeader = () => {
 
             <div class="header__wrapper--home">
 
-                <a href="${urlIndex}">
+                <a href="/../index.html">
                     <img class="header__logo logo" alt="Logo AluraGeek">
                 </a>
 
                 <div class="header__search-container">
-                    <form action="${urlSearch}">
+                    <form action="/../assets/screens/search.html">
 
                         <input type="text" placeholder="¿Qué deseas buscar?" name="search">
                         <button type="submit"><img alt="buscar"></button>
