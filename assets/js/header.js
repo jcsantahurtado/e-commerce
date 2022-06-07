@@ -3,10 +3,10 @@ let urlIndex = 'index.html';
 var urlLogin = 'assets/screens/login.html';
 var urlSearch = 'assets/screens/search.html';
 
-if (!actualUrl.includes('index')) {
+if (actualUrl.includes('assets')) {
     urlIndex = '../../index.html';
     urlLogin = 'login.html';
-    urlSearch = 'search.html'
+    urlSearch = 'search.html';
 }
 
 const crearHeader = () => {
