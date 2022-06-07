@@ -2,11 +2,13 @@ let actualUrl = document.URL;
 let urlIndex = 'index.html';
 var urlLogin = 'assets/screens/login.html';
 var urlSearch = 'assets/screens/search.html';
+var urlVerProducto = 'assets/screens/ver-producto.html';
 
 if (actualUrl.includes('assets')) {
     urlIndex = '../../index.html';
     urlLogin = 'login.html';
     urlSearch = 'search.html';
+    urlVerProducto = 'ver-producto.html';
 }
 
 const crearHeader = () => {
