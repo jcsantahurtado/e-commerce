@@ -2,7 +2,8 @@
 
 .header {
     background: #FFFFFF;
-    position: sticky;
+    /* position: sticky; */
+    position: relative;
     top: 0;
     left: 0;
     max-height: 74px;
@@ -31,8 +32,8 @@
 }
 
 .header__login-button {
-    width: 133px;
     margin-left: 1rem;
+    width: 133px;
 }
 
 .header__login-button:hover {
@@ -43,7 +44,6 @@
 .header__search-button {
     background: none;
     border: none;
-    width: 32px;
 }
 
 .header__search-button i {

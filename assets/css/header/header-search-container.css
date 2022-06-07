@@ -3,7 +3,6 @@
     position: absolute;
     left: 0;
     top: 34px;
-    height: fit-content;
     transition: all 600ms;
     width: 100%;
     z-index: -1;
