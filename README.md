@@ -9,11 +9,11 @@ https://www.figma.com/file/NUd563IRcuwUGyFGTwPP5W/AluraGeek?node-id=1%3A34
 
 
 ## Implementa:  
-Arquitectura css assets  
+Arquitectura CSS assets  
 Flexbox  
 Layouts responsivos  
 CSS Grid  
-Manipulación del DOM con js  
+Manipulación del DOM con JS  
 CRUD JS Async  
 HTML validaciones  
 Expresiones regulares  
